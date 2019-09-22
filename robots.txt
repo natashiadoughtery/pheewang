@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://mohwaekodi.imraali.com/sitemap.xml

